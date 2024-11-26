@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Panwar Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2c85bb7296.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Rohit Panwar</span> <br> fron Delhi</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--  About Section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile2.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        "Passionate Full Stack Software Developer with a strong foundation in modern web technologies.
+                        Dedicated to crafting efficient, scalable applications with clean code architecture and
+                        exceptional user experiences. I specialize in the MERN stack and have successfully delivered
+                        multiple end-to-end projects including a Stack Overflow clone.
+
+                    </p>
+                    <p><span>Frontend:</span> React.js, Next.js, TypeScript, JavaScript, HTML5,CSS3, Bootstrap, Tailwind
+                        CSS</p>
+
+                    <p><span>Backend:</span> Node.js, Express.js, Django, Flask</p>
+
+                    <p><span>Databases:</span> MongoDB, SQL</p>
+
+                    <p><span>Tools:</span> Git/GitHub, Redux Toolkit</p>
+
+                    <p>I thrive on solving complex problems and continuously expanding my knowledge in emerging
+                        technologies. Actively seeking software engineering opportunities where I can contribute my
+                        technical skills, collaborate with innovative teams, and grow as a professional developer."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Frontend Development</span>
+                                <br>Javascript, ReactJs, Next.Js, Redux Toolkit, HTML 5 & CSS 3, Tailwind / Bootstrap
+                            </li>
+                            <li>
+                                <span>Backend Development</span>
+                                <br>NodeJs, MongoDb, Django, SQL, Express, Restful Api
+                            </li>
+                            <li>
+                                <span>Mislaneous Skills</span>
+                                <br>Git/Github, Strapi
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Software Development ( July 2024 - Sep 2024 )</span>
+                                <br>CODTECH IT SOLUTIONS
+                            </li>
+                            <li>
+                                <span>Web Development - 2023</span>
+                                <br>Pahad's Pure
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Bachelors of Computer Applications (BCA) ( June 2022 - June 2025 )</span>
+                                <br> Chandigarh University
+                            </li>
+                            <li>
+                                <span>Full Stack Development Course (feb 2024 - Oct 2024 )</span>
+                                <br> Internshala Trainings
+                            </li>
+                            <li>
+                                <span>Class XII ( Apr 2018 - March 2019 )</span>
+                                <br>Army Public School No.1, Roorkee
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>As a skilled frontend developer, I specialize in creating responsive, intuitive user interfaces
+                        using React.js, Next.js, and modern JavaScript technologies. My services focus on designing
+                        seamless, high-performance web applications with pixel-perfect UI/UX, leveraging advanced
+                        frameworks like Redux for state management and Tailwind CSS for efficient styling. By combining
+                        technical precision with creative design principles, I transform complex requirements into
+                        clean, interactive, and visually compelling frontend solutions that deliver exceptional user
+                        experiences.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>As a dedicated backend developer, I specialize in designing robust, scalable server-side
+                        solutions using Node.js, Django, Express.js. My services encompass crafting efficient RESTful
+                        APIs, implementing secure authentication systems, and developing high-performance backend
+                        architectures that seamlessly integrate with frontend technologies. With a focus on clean code,
+                        I transform complex technical challenges into streamlined, reliable backend infrastructure that
+                        powers dynamic web applications.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Databse Management</h2>
+                    <p>As a database management professional, I offer comprehensive solutions for designing, optimizing,
+                        and maintaining robust database infrastructures. Specializing in both NoSQL (MongoDB) and SQL
+                        database systems, I provide end-to-end services including schema design, performance
+                        optimization, data migration, backup strategies, and secure database architecture. My expertise
+                        ensures efficient data storage, retrieval, and management, with a focus on scalability, data
+                        integrity, and seamless integration with modern application ecosystems.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Potfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.png" alt="">
+                    <div class="layer">
+                        <h3>Stack-Overflow Project</h3>
+                        <p>Developed a community-driven platform for developers to share knowledge
+                            Implemented user authentication with JSON Web Tokens (JWT)
+                            Technologies: React.js, Redux, Node.js, Express.js, MongoDB
+                        </p>
+                        <a href="https://stack-overflow-rohit.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project3.png" alt="">
+                    <div class="layer">
+                        <h3>Advance Weather App</h3>
+                        <p>Created responsive weather application with real-time geolocation
+                            Integrated third-party weather APIs for accurate forecasts
+                            Technologies: HTML, CSS, JavaScript
+                        </p>
+                        <a href="https://rohitpanwar03.github.io/Advance-Weather/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project4.png" alt="">
+                    <div class="layer">
+                        <h3>E-Sign Project</h3>
+                        <p>Designed fully responsive digital signature creation tool
+                            Implemented signature editing and download functionality
+                            Technologies: HTML, CSS, JavaScript
+                        </p>
+                        <a href="https://rohitpanwar03.github.io/E-sign/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rohitpanwar09871@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9997630675</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Delhi, India</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rohit-panwar-5913b1241/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RohitPanwar03" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name..." required>
+                        <input type="email" name="Email" placeholder="Your Email..." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Rohit Panwar</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbySluFHIY0XRK9ONvfdMORE74ZX-Tp6qfxf5wPkiXQQkDKZ-tJmXSbD5WL2SzUKShh9/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(() => {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Something went wrong"
+                })
+        })
+    </script>
+</body>
+
+</html>
